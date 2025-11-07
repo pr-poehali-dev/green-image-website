@@ -172,48 +172,80 @@ const Index = () => {
 
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-8 text-foreground">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-foreground">
             Создаем экосистему для вашего проекта
           </h2>
+          <p className="text-center text-muted-foreground text-lg mb-12 max-w-3xl mx-auto">
+            Мы не просто продаем оборудование. Мы предлагаем готовые, технологичные и финансово доступные решения, которые работают как единый организм.
+          </p>
           
-          <div className="max-w-5xl mx-auto">
-            <div className="relative">
-              <img 
-                src="https://cdn.poehali.dev/projects/f639b57a-fd38-4c3f-ab45-f1caa11e76fc/files/7445b3a8-813e-454a-b3c0-1e58d630e086.jpg" 
-                alt="Water treatment" 
-                className="w-full h-96 object-cover rounded-2xl shadow-2xl"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-2xl flex items-end">
-                <div className="p-8 text-white">
-                  <p className="text-xl leading-relaxed">
-                    Мы не просто продаем оборудование. Мы предлагаем готовые, технологичные и финансово доступные решения, которые работают как единый организм.
-                  </p>
+          <div className="max-w-6xl mx-auto">
+            <div className="relative bg-gradient-to-br from-accent/30 to-primary/5 rounded-3xl p-8 md:p-12">
+              <div className="grid md:grid-cols-5 gap-6 items-center">
+                <Card className="bg-white border-2 border-primary/20 hover:border-primary transition-all hover:shadow-lg">
+                  <CardContent className="p-6 text-center">
+                    <Icon name="Home" className="text-primary mx-auto mb-3" size={48} />
+                    <h4 className="font-bold text-lg">Экодом</h4>
+                  </CardContent>
+                </Card>
+                
+                <div className="flex justify-center">
+                  <Icon name="ArrowRight" className="text-primary hidden md:block" size={32} />
+                  <Icon name="ArrowDown" className="text-primary md:hidden" size={32} />
+                </div>
+                
+                <div className="space-y-4">
+                  <Card className="bg-white border-2 border-primary/20 hover:border-primary transition-all hover:shadow-lg">
+                    <CardContent className="p-4 text-center">
+                      <Icon name="Droplets" className="text-primary mx-auto mb-2" size={40} />
+                      <h4 className="font-bold text-sm">Очистные сооружения</h4>
+                    </CardContent>
+                  </Card>
+                  <Card className="bg-white border-2 border-primary/20 hover:border-primary transition-all hover:shadow-lg">
+                    <CardContent className="p-4 text-center">
+                      <Icon name="FlaskConical" className="text-primary mx-auto mb-2" size={40} />
+                      <h4 className="font-bold text-sm">Водоподготовка</h4>
+                    </CardContent>
+                  </Card>
+                </div>
+                
+                <div className="flex justify-center">
+                  <Icon name="ArrowRight" className="text-primary hidden md:block" size={32} />
+                  <Icon name="ArrowDown" className="text-primary md:hidden" size={32} />
+                </div>
+                
+                <div className="space-y-4">
+                  <Card className="bg-primary text-white border-0 hover:shadow-xl transition-all">
+                    <CardContent className="p-6 text-center">
+                      <Icon name="CreditCard" className="text-white mx-auto mb-3" size={48} />
+                      <h4 className="font-bold text-lg">Лизинг</h4>
+                      <p className="text-xs text-white/80 mt-2">Финансирование всего проекта</p>
+                    </CardContent>
+                  </Card>
+                </div>
+              </div>
+              
+              <div className="mt-8 pt-8 border-t border-primary/20">
+                <div className="flex items-center justify-center gap-4">
+                  <Icon name="Plus" className="text-primary" size={24} />
+                  <Card className="bg-white border-2 border-primary/20 hover:border-primary transition-all hover:shadow-lg flex-1 max-w-xs">
+                    <CardContent className="p-4 text-center">
+                      <Icon name="Container" className="text-primary mx-auto mb-2" size={40} />
+                      <h4 className="font-bold text-sm">Модульный поселок</h4>
+                      <p className="text-xs text-muted-foreground mt-1">Для рабочих и персонала</p>
+                    </CardContent>
+                  </Card>
                 </div>
               </div>
             </div>
             
-            <div className="grid md:grid-cols-3 gap-6 mt-8">
-              <Card className="bg-primary/5 border-primary/20">
-                <CardContent className="p-6 text-center">
-                  <Icon name="Building" className="text-primary mx-auto mb-3" size={40} />
-                  <h4 className="font-bold text-lg mb-2">Экодом</h4>
-                  <p className="text-sm text-muted-foreground">Экологичное строительство</p>
-                </CardContent>
-              </Card>
-              <Card className="bg-primary/5 border-primary/20">
-                <CardContent className="p-6 text-center">
-                  <Icon name="Droplets" className="text-primary mx-auto mb-3" size={40} />
-                  <h4 className="font-bold text-lg mb-2">Очистка воды</h4>
-                  <p className="text-sm text-muted-foreground">Системы водоподготовки</p>
-                </CardContent>
-              </Card>
-              <Card className="bg-primary/5 border-primary/20">
-                <CardContent className="p-6 text-center">
-                  <Icon name="CreditCard" className="text-primary mx-auto mb-3" size={40} />
-                  <h4 className="font-bold text-lg mb-2">Лизинг</h4>
-                  <p className="text-sm text-muted-foreground">Доступное финансирование</p>
-                </CardContent>
-              </Card>
+            <div className="mt-12 text-center">
+              <p className="text-lg text-muted-foreground mb-6">
+                Комплексный подход позволяет реализовать проект под ключ с единой ответственностью и гарантиями
+              </p>
+              <Button size="lg" className="text-lg px-8">
+                Рассчитать комплексное решение
+              </Button>
             </div>
           </div>
         </div>
