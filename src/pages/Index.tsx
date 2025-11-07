@@ -251,6 +251,118 @@ const Index = () => {
         </div>
       </section>
 
+      <section id="projects" className="py-20 bg-accent/30">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-foreground">
+            Реализованные проекты
+          </h2>
+          <p className="text-center text-muted-foreground text-lg mb-12">
+            Кейсы, которыми мы гордимся
+          </p>
+          
+          <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+            <Card className="group overflow-hidden hover:shadow-2xl transition-all duration-300">
+              <div className="relative h-64 overflow-hidden">
+                <img 
+                  src="https://cdn.poehali.dev/projects/f639b57a-fd38-4c3f-ab45-f1caa11e76fc/files/7f2a9fa2-9841-4d90-a773-3bbd41cb55ff.jpg" 
+                  alt="Eco residential complex" 
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute top-4 right-4 bg-primary text-white px-4 py-2 rounded-lg text-sm font-bold">
+                  Экодома
+                </div>
+              </div>
+              <CardContent className="p-6">
+                <h3 className="text-2xl font-bold mb-3 text-foreground">Экопоселок «Зеленая долина»</h3>
+                <div className="flex items-center gap-2 text-muted-foreground text-sm mb-3">
+                  <Icon name="MapPin" size={16} />
+                  <span>Московская область</span>
+                </div>
+                <p className="text-muted-foreground mb-4">
+                  Комплекс из 24 каркасных экодомов с полной инженерной инфраструктурой. Срок реализации — 8 месяцев.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="text-xs bg-primary/10 text-primary px-3 py-1 rounded-full font-semibold">Каркасные дома</span>
+                  <span className="text-xs bg-primary/10 text-primary px-3 py-1 rounded-full font-semibold">Водоподготовка</span>
+                </div>
+                <Button variant="outline" className="w-full group-hover:bg-primary group-hover:text-white transition-colors">
+                  Подробнее о проекте
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="group overflow-hidden hover:shadow-2xl transition-all duration-300">
+              <div className="relative h-64 overflow-hidden">
+                <img 
+                  src="https://cdn.poehali.dev/projects/f639b57a-fd38-4c3f-ab45-f1caa11e76fc/files/0539a2a3-2660-4244-b2bf-6b17d157b7c3.jpg" 
+                  alt="Water treatment facility" 
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute top-4 right-4 bg-primary text-white px-4 py-2 rounded-lg text-sm font-bold">
+                  Очистка воды
+                </div>
+              </div>
+              <CardContent className="p-6">
+                <h3 className="text-2xl font-bold mb-3 text-foreground">Промышленные очистные ООО «Техпром»</h3>
+                <div className="flex items-center gap-2 text-muted-foreground text-sm mb-3">
+                  <Icon name="MapPin" size={16} />
+                  <span>г. Екатеринбург</span>
+                </div>
+                <p className="text-muted-foreground mb-4">
+                  Система очистки промышленных стоков производительностью 500 м³/сут с автоматизированным управлением.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="text-xs bg-primary/10 text-primary px-3 py-1 rounded-full font-semibold">Очистные сооружения</span>
+                  <span className="text-xs bg-primary/10 text-primary px-3 py-1 rounded-full font-semibold">Лизинг</span>
+                </div>
+                <Button variant="outline" className="w-full group-hover:bg-primary group-hover:text-white transition-colors">
+                  Подробнее о проекте
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="group overflow-hidden hover:shadow-2xl transition-all duration-300">
+              <div className="relative h-64 overflow-hidden">
+                <img 
+                  src="https://cdn.poehali.dev/projects/f639b57a-fd38-4c3f-ab45-f1caa11e76fc/files/5ae2221a-f904-4cfc-b8f5-7ceeb342c233.jpg" 
+                  alt="Modular worker village" 
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute top-4 right-4 bg-primary text-white px-4 py-2 rounded-lg text-sm font-bold">
+                  Модульные здания
+                </div>
+              </div>
+              <CardContent className="p-6">
+                <h3 className="text-2xl font-bold mb-3 text-foreground">Вахтовый поселок «Северное месторождение»</h3>
+                <div className="flex items-center gap-2 text-muted-foreground text-sm mb-3">
+                  <Icon name="MapPin" size={16} />
+                  <span>Ямало-Ненецкий АО</span>
+                </div>
+                <p className="text-muted-foreground mb-4">
+                  Модульный городок на 150 человек с полным жизнеобеспечением в условиях Крайнего Севера.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="text-xs bg-primary/10 text-primary px-3 py-1 rounded-full font-semibold">Модульные здания</span>
+                  <span className="text-xs bg-primary/10 text-primary px-3 py-1 rounded-full font-semibold">Инженерия</span>
+                </div>
+                <Button variant="outline" className="w-full group-hover:bg-primary group-hover:text-white transition-colors">
+                  Подробнее о проекте
+                </Button>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="text-center mt-12">
+            <p className="text-muted-foreground mb-6 text-lg">
+              Более 150 успешно реализованных проектов по всей России
+            </p>
+            <Button size="lg" variant="outline" className="text-lg px-8">
+              Смотреть все проекты
+            </Button>
+          </div>
+        </div>
+      </section>
+
       <section id="contacts" className="py-20 relative overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
